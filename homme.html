@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Bonhomme</title>
+            <meta charset="UTF-8">
+            <link href="homme.css" rel="stylesheet">
+            <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+		
+        </head>
+
+
+
+        <body>
+            <main>
+            <div class="homme">
+                <img src="image1.png" alt="commentaire" usemap="#homme" name="homme"/>
+                    <map name="homme">
+                        <area shape="circle" coords="30,30,30" title="tête" href="cercle1"onMouseOver= "mamap.src='cercle1'" onMouseOut ="mamap.src='cercle1'" >
+                </map>
+            </div>
+                <div class="tête" id="cercle1"></div>
+                    <script>$("#cercle1").hover(function(){
+                        $("#desc-tête").toggle();
+                        }); 
+                    </script>
+
+                    <script>$("#cercle2").hover(function(){
+                        $("#desc-épaule").toggle();
+                        }); 
+                    </script>
+
+
+
+
+
+            <div id="corps"></div>
+                <div id="placeholder">
+
+                    <div id="desc-tête" class="desc">
+                            <p>Tête :</p>
+                            <br>
+                            <br>
+                            <p>Dessus du corps, là ou il y'a le cerveau</p>
+
+                            
+                        <div id="desc-épaules" class="desc">
+                            <p>Epaules :</p>
+                            <br>
+                            <br>
+                            <p>La région morphologique de l'épaule (nom féminin) permet la jonction du tronc avec le membre supérieur au niveau du bras. Elle comporte plusieurs articulations la plus mobile du corps humain. Elle permet d'orienter le member supérieur dans l'espace permettant en particulier à son extrémité effectrice, la main, d'assurer ses rôles de préhension et de communication avec l'environnement situé à sa portée.</p>
+                        </div>
+
+                    </div>
+                </div>
+            <div id="cercle2"></div>
+                
+
+                   
+            <div id="cercle3"></div>
+            <div id="cercle4"></div>
+            <div id="cercle5"></div>
+            <div id="cercle6"></div>
+            <div id="cercle7"></div>
+            <div id="cercle8"></div>
+            </main>
+        </body>
+    
+    </html>
